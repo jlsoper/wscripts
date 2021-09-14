@@ -34,5 +34,5 @@ current time, without prompting for a new time.
 ::  git commit -m "(message)"
 ::  ECHO %DATE% %TIME%
 
-git commit -m "%DATE% %TIME%"
+git commit -m "%DATE% %TIME% - %COMPUTERNAME%"
 
