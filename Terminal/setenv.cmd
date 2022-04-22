@@ -35,7 +35,6 @@ CALL %~dp0git.env.cmd
 ::   CALL %~dp0python.env.cmd
 
 
-::  START /B /D%HOMEDRIVE%\
-START /B /DW:\
+::  START /B /DW:\
 TITLE CMD
 IF "%USERDNSDOMAIN%"=="" (ECHO %COMPUTERNAME%) ELSE (ECHO %COMPUTERNAME%.%USERDNSDOMAIN%)
