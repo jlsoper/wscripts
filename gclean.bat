@@ -64,16 +64,5 @@ If any optional <path>... arguments are given, only those paths are affected.
 
 ://////////////////////////////////////////////////
 
-if ""%1""=="""" GOTO howTO
-
-::  Remove untracked file, 1 by 1
-git clean -d -f %1
-
-GOTO END
-
-:howTO
-
-ECHO "usage: %0 <file>"
-
-:END
+git clean -i
 
