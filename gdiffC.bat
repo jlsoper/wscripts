@@ -68,7 +68,7 @@ GOTO END
 
 :howTO
 
-ECHO "usage: %0 <commit1> <commit2>"
+ECHO "usage: %0 <parent-SHA> <child-SHA>"
 
 :END
 

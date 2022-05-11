@@ -61,7 +61,7 @@ GOTO END
 
 :howTO
 
-ECHO "usage: %0 <file>"
+ECHO "usage: %0 <fileName>"
 
 :END
 

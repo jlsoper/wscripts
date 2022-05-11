@@ -57,14 +57,14 @@ See 'git help git' for an overview of the system.
 
 if ""%1""=="""" GOTO howTO
 
-::  Undo all staged & local changes
+::  Undo local changes
 git checkout -- %1
 
 GOTO END
 
 :howTO
 
-ECHO "usage: %0 <file>"
+ECHO "usage: %0 <fileName>"
 
 :END
 
