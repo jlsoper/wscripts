@@ -47,15 +47,5 @@ Other
 
 ://////////////////////////////////////////////////
 
-if ""%1""=="""" GOTO noPARAM
-
-:: display the # of lines for the git log
-git --no-pager log -n %1 --oneline
-
-GOTO END
-
-:noPARAM
-
 git --no-pager log --oneline
 
-:END
