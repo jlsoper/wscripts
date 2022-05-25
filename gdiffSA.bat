@@ -3,115 +3,58 @@
 
 GOTO //////////////////////////////////////////////////
 
-git-difftool - Show changes using common diff tools
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
 
-SYNOPSIS
-git difftool [<options>] [<commit> [<commit>]] [--] [<path>…?]
+These are common Git commands used in various situations:
 
-DESCRIPTION
-git difftool is a Git command that allows you to compare and edit files between revisions using common diff tools.
-git difftool is a frontend to git diff and accepts the same options and arguments. See git-diff(1).
+start a working area (see also: git help tutorial)
+   clone             Clone a repository into a new directory
+   init              Create an empty Git repository or reinitialize an existing one
 
-OPTIONS
--d
---dir-diff
-Copy the modified files to a temporary location and perform a directory diff on them. This mode never prompts before launching the diff tool.
+work on the current change (see also: git help everyday)
+   add               Add file contents to the index
+   mv                Move or rename a file, a directory, or a symlink
+   restore           Restore working tree files
+   rm                Remove files from the working tree and from the index
+   sparse-checkout   Initialize and modify the sparse-checkout
 
--y
---no-prompt
-Do not prompt before launching a diff tool.
+examine the history and state (see also: git help revisions)
+   bisect            Use binary search to find the commit that introduced a bug
+   diff              Show changes between commits, commit and working tree, etc
+   grep              Print lines matching a pattern
+   log               Show commit logs
+   show              Show various types of objects
+   status            Show the working tree status
 
---prompt
-Prompt before each invocation of the diff tool. This is the default behaviour; the option is provided to override any configuration settings.
+grow, mark and tweak your common history
+   branch            List, create, or delete branches
+   commit            Record changes to the repository
+   merge             Join two or more development histories together
+   rebase            Reapply commits on top of another base tip
+   reset             Reset current HEAD to the specified state
+   switch            Switch branches
+   tag               Create, list, delete or verify a tag object signed with GPG
 
--t <tool>
---tool=<tool>
-Use the diff tool specified by <tool>. Valid values include emerge, kompare, meld, and vimdiff. Run git difftool --tool-help for the
- list of valid <tool> settings.
+collaborate (see also: git help workflows)
+   fetch             Download objects and refs from another repository
+   pull              Fetch from and integrate with another repository or a local branch
+   push              Update remote refs along with associated objects
 
-If a diff tool is not specified, git difftool will use the configuration variable diff.tool. If the configuration variable diff.tool
- is not set, git difftool will pick a suitable default.
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
 
-You can explicitly provide a full path to the tool by setting the configuration variable difftool.<tool>.path. For example, you can
- configure the absolute path to kdiff3 by setting difftool.kdiff3.path. Otherwise, git difftool assumes the tool is available in PATH.
 
-Instead of running one of the known diff tools, git difftool can be customized to run an alternative program by specifying the
- command line to invoke in a configuration variable difftool.<tool>.cmd.
+::::::::::  git command using PAT, command line for 2FA
 
-When git difftool is invoked with this tool (either through the -t or --tool option or the diff.tool configuration variable)
- the configured command line will be invoked with the following variables available: $LOCAL is set to the name of the temporary file
- containing the contents of the diff pre-image and $REMOTE is set to the name of the temporary file containing the contents of the
- diff post-image. $MERGED is the name of the file which is being compared. $BASE is provided for compatibility with custom merge 
- tool commands and has the same value as $MERGED.
+git clone https://[username]:[token]@github.com/[organization]/[repo].git
 
---tool-help
-Print a list of diff tools that may be used with --tool.
-
---[no-]symlinks
-git difftool's default behavior is create symlinks to the working tree when run in --dir-diff mode and the right-hand side of
- the comparison yields the same content as the file in the working tree.
-
-Specifying --no-symlinks instructs git difftool to create copies instead. --no-symlinks is the default on Windows.
-
--x <command>
---extcmd=<command>
-Specify a custom command for viewing diffs. git-difftool ignores the configured defaults and runs $command $LOCAL $REMOTE when
- this option is specified. Additionally, $BASE is set in the environment.
-
--g
---[no-]gui
-When git-difftool is invoked with the -g or --gui option the default diff tool will be read from the configured diff.guitool variable
- instead of diff.tool. The --no-gui option can be used to override this setting. If diff.guitool is not set, we will fallback in the
- order of merge.guitool, diff.tool, merge.tool until a tool is found.
-
---[no-]trust-exit-code
-git-difftool invokes a diff tool individually on each file. Errors reported by the diff tool are ignored by default.
- Use --trust-exit-code to make git-difftool exit when an invoked diff tool returns a non-zero exit code.
-
-git-difftool will forward the exit code of the invoked tool when --trust-exit-code is used.
-
-See git-diff(1) for the full list of supported options.
-
-CONFIG VARIABLES
-git difftool falls back to git mergetool config variables when the difftool equivalents have not been defined.
-
-diff.tool
-The default diff tool to use.
-
-diff.guitool
-The default diff tool to use when --gui is specified.
-
-difftool.<tool>.path
-Override the path for the given tool. This is useful in case your tool is not in the PATH.
-
-difftool.<tool>.cmd
-Specify the command to invoke the specified diff tool.
-
-See the --tool=<tool> option above for more details.
-
-difftool.prompt
-Prompt before each invocation of the diff tool.
-
-difftool.trustExitCode
-Exit difftool if the invoked diff tool returns a non-zero exit status.
-
-See the --trust-exit-code option above for more details.
-
-SEE ALSO
-git-diff(1)
-Show changes between commits, commit and working tree, etc
-
-git-mergetool(1)
-Run merge conflict resolution tools to resolve merge conflicts
-
-git-config(1)
-Get and set repository or global options
-
-:::::::::::
-
-SET GITDIR=W:\Git
-SET PATH=%GITDIR%\cmd;%PATH%
-
+git diff branch1..branch2
 
 ://////////////////////////////////////////////////
 
