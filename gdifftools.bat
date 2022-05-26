@@ -114,4 +114,4 @@ SET PATH=%GITDIR%\cmd;%PATH%
 
 ://////////////////////////////////////////////////
 
-git difftool
+git difftool --tool-help
