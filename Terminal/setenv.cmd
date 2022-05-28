@@ -4,6 +4,9 @@ REM ----------- SETENV -----------
 
 GOTO //////////////////////////////////////////////////
 
+%HOMEDRIVE%%HOMEPATH%
+%USERPROFILE%
+
 ::  ECHO %~f0  -- complete path & filename of running script
 ::  ECHO %~dp0 -- complete path of running script
 
@@ -11,6 +14,8 @@ GOTO //////////////////////////////////////////////////
 
 
 ://////////////////////////////////////////////////
+
+SET HOME=%USERPROFILE%
 
 SET DIRCMD=/a /ogen
 
@@ -33,3 +38,4 @@ CALL %~dp0git.env.cmd
 ::  START /B /DW:\
 TITLE CMD
 IF "%USERDNSDOMAIN%"=="" (ECHO %COMPUTERNAME%) ELSE (ECHO %COMPUTERNAME%.%USERDNSDOMAIN%)
+
