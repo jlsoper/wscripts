@@ -10,12 +10,11 @@ GOTO //////////////////////////////////////////////////
 ::  ECHO %~f0  -- complete path & filename of running script
 ::  ECHO %~dp0 -- complete path of running script
 
-%HOME% - may be defined by Windows domain setting (your network drive)
+::  set HOME variable with EV.lnk (GUI)
+SET HOME=%USERPROFILE%\Linux
 
 
 ://////////////////////////////////////////////////
-
-SET HOME=%USERPROFILE%
 
 SET DIRCMD=/a /ogen
 
