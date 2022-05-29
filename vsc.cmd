@@ -75,5 +75,5 @@ Troubleshooting
 
 ://////////////////////////////////////////////////
 
-W:\VSCode\bin\code --extensions-dir %USERPROFILE%\.vscode\extensions --user-data-dir %USERPROFILE%\.vscode\user-data
+W:\VSCode\bin\code --extensions-dir %HOME%\vscode\extensions --user-data-dir %HOME%\vscode\user-data
 
