@@ -25,5 +25,5 @@ usage: scp [-346ABCOpqRrsTv] [-c cipher] [-D sftp_server_path] [-F ssh_config]
 
 ::
 
-%GITDIR%\usr\bin\scp.exe
+%GITDIR%\usr\bin\scp.exe %*
 

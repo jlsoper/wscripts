@@ -27,5 +27,5 @@ usage: sftp [-46AaCfNpqrv] [-B buffer_size] [-b batchfile] [-c cipher]
 
 ::
 
-%GITDIR%\usr\bin\sftp.exe
+%GITDIR%\usr\bin\sftp.exe %*
 
