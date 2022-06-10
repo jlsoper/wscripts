@@ -101,5 +101,5 @@ SET DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 SET PATH=%PATH%;%ProgramFiles%\dotnet\
 
-:: SET PATH=%PATH%;%USERPROFILE%\.dotnet\tools
+SET PATH=%PATH%;%USERPROFILE%\.dotnet\tools
 
