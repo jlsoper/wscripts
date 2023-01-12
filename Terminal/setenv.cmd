@@ -18,6 +18,9 @@ SET HOME=%USERPROFILE%\Linux
 
 SET DIRCMD=/a /ogen
 
+::  Visual Studo Code
+SET USER_VSC=%HOME%\vscode\user-data\User
+
 :: SET DB_USER=
 :: SET DB_PASSWD=
 
