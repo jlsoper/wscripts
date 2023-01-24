@@ -8,11 +8,16 @@ GOTO //////////////////////////////////////////////////
 ::  ECHO %~dp0 -- complete path of running script
 
 
+.Net SDK x64 LTS
+  dotnet-sdk-6.0.405-win-x64.exe
+
+The installation was successful.
+
 The following products were installed at: ''
-    * .NET SDK 6.0.300
-    * .NET Runtime 6.0.5
-    * ASP.NET Core Runtime 6.0.5
-    * .NET Windows Desktop Runtime 6.0.5
+    * .NET SDK 6.0.405
+    * .NET Runtime 6.0.13
+    * ASP.NET Core Runtime 6.0.13
+    * .NET Windows Desktop Runtime 6.0.13
 
 This product collects usage data
     * More information and opt-out https://aka.ms/dotnet-cli-telemetry
