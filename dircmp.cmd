@@ -24,7 +24,8 @@ Run meld --help for a list of all command line options.
 if ""%2""=="""" GOTO noPARAM
 
 ::  Compare 2 directories with Meld
-start C:\PROGRA~2\Meld\Meld.exe %1 %2
+::   start C:\PROGRA~2\Meld\Meld.exe %1 %2
+start W:\Meld\MeldPortable.exe %1 %2
 
 GOTO END
 
