@@ -82,10 +82,20 @@ Documentation can be found at https://nodejs.org/
 ::::::::::::::::::::
 
 node -v
-v10.16.2
+v18.13.0
+
+npm -v
+8.19.3
+
+Node.js is only supported on Windows 8.1, Windows Server 2012 R2, or higher.
+Setting the NODE_SKIP_PLATFORM_CHECK environment variable to 1 skips this
+check, but Node.js might not execute correctly.
+Any issues encountered on unsupported platforms will not be fixed.
 
 ://////////////////////////////////////////////////
 
-SET NODEJS_HOME=C:\Apps\nodejs
+SET NODE_SKIP_PLATFORM_CHECK=1
+
+SET NODEJS_HOME=W:\NodeJS
 
 SET PATH=%NODEJS_HOME%;%PATH%
