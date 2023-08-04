@@ -24,5 +24,4 @@ appended to the new setting.
 
 ://////////////////////////////////////////////////
 
-echo.
 echo.%Path:;=&echo.%

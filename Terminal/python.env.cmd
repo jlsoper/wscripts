@@ -11,7 +11,7 @@ GOTO //////////////////////////////////////////////////
 
 ://////////////////////////////////////////////////
 
-SET myPython=W:\Python\python-3.7.1.amd64\Scripts;W:\Python\python-3.7.1.amd64\Lib\site-packages;W:\Python\python-3.7.1.amd64
+SET myPython=W:\Python\python-3.11.3.amd64\Scripts;W:\Python\python-3.11.3.amd64\Lib\site-packages;W:\Python\python-3.11.3.amd64
 
 SET PATH=%myPython%;%PATH%
 
