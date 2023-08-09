@@ -9,6 +9,9 @@ GOTO //////////////////////////////////////////////////
 
 %HOME% - may be defined by Windows domain setting (your network drive)
 
+::  set system wide property (no credential helper)
+git config --system --unset credential.helper
+
 
 ://////////////////////////////////////////////////
 
