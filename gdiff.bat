@@ -109,6 +109,12 @@ Get and set repository or global options
 
 :::::::::::
 
+%HOME% - may be defined by Windows domain setting (your network drive)
+
+::  set system wide property (no credential helper)
+git config --system --unset credential.helper
+
+
 SET GITDIR=W:\Git
 SET PATH=%GITDIR%\cmd;%PATH%
 

@@ -45,8 +45,13 @@ Other
     --show-scope          show scope of config (worktree, local, global, system, command)
     --default <value>     with --get, use default value when missing entry
 
-://////////////////////////////////////////////////
+:::::::::::
 
 git --no-pager log > %TEMP%\git-commit.log
 
 start %USERPROFILE%\HDD\Notepad2\Notepad2.exe %TEMP%\git-commit.log
+
+
+://////////////////////////////////////////////////
+
+git --no-pager log --reverse

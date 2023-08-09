@@ -47,5 +47,4 @@ Other
 
 ://////////////////////////////////////////////////
 
-git --no-pager log --oneline
-
+git --no-pager log --reverse --oneline
