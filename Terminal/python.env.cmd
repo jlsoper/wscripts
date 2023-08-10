@@ -11,6 +11,10 @@ GOTO //////////////////////////////////////////////////
 
 ://////////////////////////////////////////////////
 
+::  move __pycache__ directory  ( Python3.8+ )
+SET PYTHONPYCACHEPREFIX=%TEMP%\__pycache__
+
+
 SET myPython=W:\Python\python-3.11.3.amd64\Scripts;W:\Python\python-3.11.3.amd64\Lib\site-packages;W:\Python\python-3.11.3.amd64
 
 SET PATH=%myPython%;%PATH%
