@@ -56,5 +56,6 @@ arg ...: arguments passed to program in sys.argv[1:]
 
 ://////////////////////////////////////////////////
 
-deactivate
+:: activate / deactivate
+call  venv\Scripts\activate.bat
 
