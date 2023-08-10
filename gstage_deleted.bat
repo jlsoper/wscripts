@@ -51,28 +51,41 @@ See 'git help git' for an overview of the system.
 
 :::::::::::
 
-usage: git add [<options>] [--] <pathspec>...
+usage: git ls-files [<options>] [<file>...]
 
-    -n, --dry-run         dry run
-    -v, --verbose         be verbose
-
-    -i, --interactive     interactive picking
-    -p, --patch           select hunks interactively
-    -e, --edit            edit current diff and apply
-    -f, --force           allow adding otherwise ignored files
-    -u, --update          update tracked files
-    --renormalize         renormalize EOL of tracked files (implies -u)
-    -N, --intent-to-add   record only the fact that the path will be added later
-    -A, --all             add changes from all tracked and untracked files
-    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
-    --refresh             don't add, only refresh the index
-    --ignore-errors       just skip files which cannot be added because of errors
-    --ignore-missing      check if - even missing - files are ignored in dry run
-    --sparse              allow updating entries outside of the sparse-checkout cone
-    --chmod (+|-)x        override the executable bit of the listed files
-    --pathspec-from-file <file>
-                          read pathspec from file
-    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+    -z                    separate paths with the NUL character
+    -t                    identify the file status with tags
+    -v                    use lowercase letters for 'assume unchanged' files
+    -f                    use lowercase letters for 'fsmonitor clean' files
+    -c, --cached          show cached files in the output (default)
+    -d, --deleted         show deleted files in the output
+    -m, --modified        show modified files in the output
+    -o, --others          show other files in the output
+    -i, --ignored         show ignored files in the output
+    -s, --stage           show staged contents' object name in the output
+    -k, --killed          show files on the filesystem that need to be removed
+    --directory           show 'other' directories' names only
+    --eol                 show line endings of files
+    --empty-directory     don't show empty directories
+    -u, --unmerged        show unmerged files in the output
+    --resolve-undo        show resolve-undo information
+    -x, --exclude <pattern>
+                          skip files matching pattern
+    -X, --exclude-from <file>
+                          read exclude patterns from <file>
+    --exclude-per-directory <file>
+                          read additional per-directory exclude patterns in <file>
+    --exclude-standard    add the standard git exclusions
+    --full-name           make the output relative to the project top directory
+    --recurse-submodules  recurse through submodules
+    --error-unmatch       if any <file> is not in the index, treat this as an error
+    --with-tree <tree-ish>
+                          pretend that paths removed since <tree-ish> are still present
+    --abbrev[=<n>]        use <n> digits to display object names
+    --debug               show debugging data
+    --deduplicate         suppress duplicate entries
+    --sparse              show sparse directories in the presence of a sparse index
+    --format <format>     format to use for the output
 
 ://////////////////////////////////////////////////
 
