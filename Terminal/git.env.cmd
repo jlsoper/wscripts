@@ -17,6 +17,9 @@ git config --system --unset credential.helper
 
 ::  SET HOME=%USERPROFILE%
 
+:::::  toggle variable for git diff / difftool
+SET GDIFF_STRING=diff
+
 SET GITDIR=W:\Git
 SET PATH=%GITDIR%\cmd;%PATH%
 
