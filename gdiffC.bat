@@ -61,8 +61,7 @@ git diff branch1..branch2
 if ""%2""=="""" GOTO howTO
 
 ::  Compare 2 commits  -  ( use the shortened seven-character SHA codes, for the commit # )
-git diff %1..%2
-
+git %GDIFF_STRING% %1..%2
 
 GOTO END
 

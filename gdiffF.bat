@@ -56,7 +56,23 @@ git clone https://[username]:[token]@github.com/[organization]/[repo].git
 
 git diff branch1..branch2
 
+::   for branch in remote repo, use syntax 'origin/branch2'
+
 ://////////////////////////////////////////////////
 
-git %GDIFF_STRING% --staged %*
+if ""%3""=="""" GOTO howTO
+
+:: compare file across branches or commits
+git difftool %1..%2 -- %3
+
+
+GOTO END
+
+:howTO
+
+ECHO "usage: gdiffF <branch1> <branch2>"
+ECHO -- OR --
+ECHO "usage: gdiffF <parent-SHA> <child-SHA>"
+
+:END
 

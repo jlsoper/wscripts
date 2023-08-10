@@ -56,13 +56,14 @@ git clone https://[username]:[token]@github.com/[organization]/[repo].git
 
 git diff branch1..branch2
 
+::   for branch in remote repo, use syntax 'origin/branch2'
+
 ://////////////////////////////////////////////////
 
 if ""%2""=="""" GOTO howTO
 
 ::  Compare 2 branches, top level down
-git diff %1..%2
-
+git %GDIFF_STRING% %1..%2
 
 GOTO END
 
