@@ -34,4 +34,9 @@ current time, without prompting for a new time.
 ::  git commit -m "(message)"
 ::  ECHO %DATE% %TIME%
 
-git commit -m "%DATE% %TIME% - %COMPUTERNAME% \ %USERNAME%"
+if "%USERDNSDOMAIN%"=="" (
+  git commit -m "%DATE% %TIME% - %COMPUTERNAME%"
+) else (
+  git commit -m "%DATE% %TIME% - %COMPUTERNAME% \ %USERNAME%"
+)
+
