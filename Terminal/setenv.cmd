@@ -28,7 +28,7 @@ SET PATH=%PATH%;W:\wscripts
 
 
 ::  Call any other .cmd file
-CALL %~dp0git.env.cmd
+::  CALL %~dp0git.env.cmd
 
 ::  CALL %~dp0ant.env.cmd
 ::  CALL %~dp0maven.env.cmd
@@ -41,6 +41,12 @@ CALL %~dp0git.env.cmd
 
 
 ::  START /B /DW:\
-TITLE CMD
-IF "%USERDNSDOMAIN%"=="" (ECHO %COMPUTERNAME%) ELSE (ECHO %COMPUTERNAME%.%USERDNSDOMAIN%)
+::  IF "%USERDNSDOMAIN%"=="" (ECHO %COMPUTERNAME%) ELSE (ECHO %COMPUTERNAME%.%USERDNSDOMAIN%)
+
+ECHO.
+if "%USERDNSDOMAIN%"=="" (
+  TITLE %COMPUTERNAME%
+) else (
+  TITLE %COMPUTERNAME%.%USERDNSDOMAIN%
+)
 
