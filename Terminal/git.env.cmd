@@ -7,6 +7,9 @@ GOTO //////////////////////////////////////////////////
 ::  ECHO %~f0  -- complete path & filename of running script
 ::  ECHO %~dp0 -- complete path of running script
 
+::  Remove from system path (Use Git)
+C:\Windows\System32\OpenSSH
+
 %HOME% - may be defined by Windows domain setting (your network drive)
 
 ::  set system wide property (no credential helper)
