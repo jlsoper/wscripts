@@ -19,3 +19,6 @@ SET myPython=W:\Python\python-3.11.3.amd64\Scripts;W:\Python\python-3.11.3.amd64
 
 SET PATH=%myPython%;%PATH%
 
+
+:::::  .bash_git
+doskey /macrofile=%~dp0python.txt

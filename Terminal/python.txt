@@ -1,0 +1,12 @@
+py_activate=venv\Scripts\activate.bat
+py_doc=python -m pydoc -p 37000
+py_install=pip3 install $*
+py_list=pip3 list
+py_man=python -m pydoc $1
+py_path=python -c "import sys; print ('\n'.join(sys.path))"
+py_show=pip3 show $1
+py_site=python -m site
+py_uninstall=pip3 uninstall $*
+py_venv=python -m venv venv
+py_venv_req_r=pip3 install -r requirements.txt
+py_venv_req_w=pip3 freeze > requirements.txt
