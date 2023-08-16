@@ -22,10 +22,6 @@ glogs=git --no-pager log --reverse
 gpull=if "$1"=="" (echo "usage: gpull <branch>") else (git pull origin $1)
 gpush=if "$1"=="" (echo "usage: gpush <branch>") else (git push origin $1)
 greset=if "$1"=="" (echo "usage: greset <file>") else (git reset -- $1)
-
-
-
-
-
-
+grollback=choice /T 7 /M "Are you sure you want to Rollback the latest commit" /D n $T if %ERRORLEVEL% equ 1 git reset --soft HEAD~1
+gstage_deleted=git ls-files -d > %temp%\git_ls-files--deleted.txt $T for /F "tokens=1" %g IN (%temp%\git_ls-files--deleted.txt) do git add %g
 gstatus=git status -s
