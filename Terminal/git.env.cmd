@@ -26,3 +26,6 @@ SET GDIFF_STRING=diff
 SET GITDIR=W:\Git
 SET PATH=%GITDIR%\cmd;%PATH%
 
+
+:::::  .bash_git
+doskey /macrofile=%~dp0git.txt
