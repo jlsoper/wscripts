@@ -219,6 +219,7 @@ Example: "COLOR fc" produces light red on bright white
 ::   cmd.exe
 :: Ctrl+Shift+Enter
 
+%windir%\system32\cmd.exe /K W:\wscripts\Terminal\setenv.cmd
 %windir%\system32\cmd.exe /T:0B /K cd\ && SET DIRCMD=/a /ogen && TITLE console
 
 %HOMEDRIVE%\
