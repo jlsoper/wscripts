@@ -27,17 +27,7 @@ usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
 
 ://////////////////////////////////////////////////
 
-:: specify the port for ssh connection
-
-if ""%3""=="""" GOTO PARAM-2
-
-%GITDIR%\usr\bin\ssh.exe %1@%2:%3
-
-GOTO END
-
-:PARAM-2
-
-:: default port for ssh (22)
+:: /usr/bin/ssh userID@host:port
 
 if ""%2""=="""" GOTO noPARAM
 
@@ -47,7 +37,7 @@ GOTO END
 
 :noPARAM
 
-ECHO "usage: %0 <userID> <host> [<portNumber>]"
+ECHO "usage: %0 <userID> <host>"
 
 :END
 
