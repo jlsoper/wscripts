@@ -72,17 +72,15 @@ For full information on FINDSTR regular expressions refer to the online Command 
 
 ://////////////////////////////////////////////////
 
-if ""%2""=="""" GOTO noPARAM
+if ""%1""=="""" GOTO noPARAM
 
-FINDSTR /A:0A /N /L %3 %4 /P /C:%1 %2 2>nul
+FINDSTR /A:0D /N /L /s /P /C:%1 * 2>nul
 
 GOTO END
 
 :noPARAM
 
-ECHO.
-ECHO //  %0 - literal string search (use "" in string search)
-ECHO "usage: %0 "string" <file> [<"/s" subdirectories> <"/i" ignorecase>]
+ECHO usage: %0 "string"
 ECHO.
 
 :END
