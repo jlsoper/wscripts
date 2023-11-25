@@ -40,6 +40,7 @@ CALL %~dp0git.env.cmd
 ::  CALL %~dp0java.env.cmd
 
 ::  CALL %~dp0dotnet.env.cmd
+::  CALL %~dp0golang.env.cmd
 ::  CALL %~dp0python.env.cmd
 
 
