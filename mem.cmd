@@ -16,4 +16,5 @@ Available Physical Memory: 0 MB
 SYSTEMINFO | FINDSTR /C:"Total Physical Memory"
 echo.
 SYSTEMINFO | FINDSTR /C:"Available Physical Memory"
+echo.
 
