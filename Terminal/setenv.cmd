@@ -11,7 +11,7 @@ GOTO //////////////////////////////////////////////////
 ::  ECHO %~dp0 -- complete path of running script
 
 ::  set HOME variable with EV.lnk (GUI)
-SET HOME=%USERPROFILE%\Linux
+SET HOME=%USERPROFILE%\Unix
 
 
 ://////////////////////////////////////////////////
@@ -19,7 +19,7 @@ SET HOME=%USERPROFILE%\Linux
 SET DIRCMD=/a /ogen
 
 ::  WSL 2
-SET HOME_L=L:\home\jsoper
+::  SET HOME_L=L:\home\jsoper
 
 ::  Visual Studo Code
 SET USER_VSC=%HOME%\vscode\user-data\User
