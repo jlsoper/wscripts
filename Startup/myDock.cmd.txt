@@ -39,3 +39,4 @@ If you don't want to display a message to the user during the delay,
 timeout /t 4 /nobreak >nul
 
 start %USERPROFILE%\HDD\RocketDock\RocketDock.exe
+
