@@ -13,11 +13,11 @@ GOTO //////////////////////////////////////////////////
 
 The installation was successful.
 
-The following products were installed at: ''
-    * .NET SDK 6.0.405
-    * .NET Runtime 6.0.13
-    * ASP.NET Core Runtime 6.0.13
-    * .NET Windows Desktop Runtime 6.0.13
+The following products were installed:
+    * .NET SDK 8.0.405
+    * .NET Runtime 8.0.12
+    * ASP.NET Core Runtime 8.0.12
+    * .NET Windows Desktop Runtime 8.0.12
 
 This product collects usage data
     * More information and opt-out https://aka.ms/dotnet-cli-telemetry
