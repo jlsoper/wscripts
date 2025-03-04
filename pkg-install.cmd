@@ -74,13 +74,16 @@ winget install -e --id Git.Git
 
 if ""%2""=="""" GOTO noPARAM
 
+echo.
 winget install -e --id %1 --location %USERPROFILE%\HDD\%2
 
 GOTO END
 
 :noPARAM
 
-ECHO "usage: %0 <PackageId> <appName>"
+ECHO "usage: %0 <packageId> <appName>"
 
 :END
+
+echo.
 

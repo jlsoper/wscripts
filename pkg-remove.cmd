@@ -59,6 +59,7 @@ More help can be found at: https://aka.ms/winget-command-uninstall
 
 if ""%1""=="""" GOTO noPARAM
 
+echo.
 winget uninstall %1
 
 GOTO END
@@ -68,4 +69,6 @@ GOTO END
 ECHO "usage: %0 <appName>"
 
 :END
+
+echo.
 

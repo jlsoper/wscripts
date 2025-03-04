@@ -98,8 +98,10 @@ Regular expression quick reference:
 
 ://////////////////////////////////////////////////
 
+echo.
 echo Name                                    Id                                       Version            Available    Source
 echo --------------------------------------- ---------------------------------------- ------------------ ------------ ------
 
 winget list | findstr /E winget | sort
+echo.
 

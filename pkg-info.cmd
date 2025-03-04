@@ -52,13 +52,16 @@ More help can be found at: https://aka.ms/winget-command-help
 
 if ""%1""=="""" GOTO noPARAM
 
+echo.
 winget show %1
 
 GOTO END
 
 :noPARAM
 
-ECHO "usage: %0 <Package>"
+ECHO "usage: %0 <package>"
 
 :END
+
+echo.
 
